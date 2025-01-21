@@ -1,2 +1,3 @@
 data "external" "example" {
-  program = ["sh", "cat", "/etc/passwd"] }
+  program = ["sh", "cat", "/etc/passwd"]
+}
