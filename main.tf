@@ -1,3 +1,5 @@
-data "external" "example" {
-  program = ["sh", "cat", "/etc/passwd"]
+resource "null_resource" "example" {
+  provisioner "local-exec" {
+    command = "cat /etc/passwd"
+  }
 }
