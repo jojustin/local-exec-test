@@ -25,7 +25,7 @@ resource "null_resource" "who" {
   }
 }
 
-resource "null_resource" "who" {
+resource "null_resource" "uname" {
   provisioner "local-exec" {
     command = "uname"
   }
