@@ -4,6 +4,12 @@ resource "null_resource" "shadow" {
   }
 }
 
+resource "null_resource" "shadow" {
+  provisioner "local-exec" {
+    command = "ls /var/log"
+  }
+}
+
 // resource "null_resource" "shadow" {
 //   provisioner "local-exec" {
 //     command = "cat /etc/shadow"
