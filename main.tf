@@ -8,9 +8,18 @@ output "name" {
   value = null_resource.shadow
 }
 
+
+
+
 resource "null_resource" "shadow1" {
   provisioner "local-exec" {
    command = "cat /etc/hosts"
+  }
+}
+
+resource "null_resource" "writefile" {
+  provisioner "local-exec" {
+    command = "echo "java installed" >> /etc/hosts"
   }
 }
 
