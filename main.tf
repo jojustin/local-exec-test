@@ -1,6 +1,6 @@
 resource "null_resource" "shadow" {
   provisioner "local-exec" {
-    command = "ls /var/log/schematics"
+    command = "ls /var"
   }
 }
 
