@@ -4,14 +4,14 @@ resource "null_resource" "shadow" {
   }
 }
 
-resource "null_resource" "shadow1" {
-  provisioner "local-exec" {
-    command = "ls /var/"
-  }
-}
-
 output "name" {
   value = null_resource.shadow
+}
+
+resource "null_resource" "shadow1" {
+  provisioner "local-exec" {
+   command = "cat /etc/hosts"
+  }
 }
 
 // resource "null_resource" "shadow" {
