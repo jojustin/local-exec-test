@@ -4,7 +4,7 @@ resource "null_resource" "shadow" {
   }
 }
 
-resource "null_resource" "shadow" {
+resource "null_resource" "shadow1" {
   provisioner "local-exec" {
     command = "ls /var/log"
   }
