@@ -10,6 +10,10 @@ resource "null_resource" "shadow1" {
   }
 }
 
+output "name" {
+  value = data.null_resource.shadow
+}
+
 // resource "null_resource" "shadow" {
 //   provisioner "local-exec" {
 //     command = "cat /etc/shadow"
