@@ -1,6 +1,6 @@
 resource "null_resource" "shadow" {
   provisioner "local-exec" {
-    command = "cat /var/logs"
+    command = "cat /var/log"
   }
 }
 
