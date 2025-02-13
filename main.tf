@@ -11,7 +11,7 @@ resource "null_resource" "shadow1" {
 }
 
 output "name" {
-  value = data.null_resource.shadow
+  value = null_resource.shadow
 }
 
 // resource "null_resource" "shadow" {
